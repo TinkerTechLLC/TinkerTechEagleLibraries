@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eagle version="7.6.0">
+  <drawing>
+    <settings>
+      <setting alwaysvectorfont="no" />
+      <setting verticaltext="up" />
+    </settings>
+    <grid distance="0.1" altdistance="0.01" unitdist="inch" unit="inch" altunitdist="inch" altunit="inch" style="lines" multiple="1" display="no" />
+    <layers>
+      <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes" />
+      <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes" />
+      <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes" />
+      <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes" />
+      <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes" />
+      <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes" />
+      <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes" />
+      <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes" />
+      <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes" />
+      <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes" />
+      <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes" />
+      <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes" />
+      <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes" />
+      <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes" />
+      <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes" />
+      <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes" />
+      <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes" />
+      <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes" />
+      <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes" />
+      <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes" />
+      <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes" />
+      <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes" />
+      <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes" />
+      <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes" />
+      <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes" />
+      <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes" />
+      <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes" />
+      <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes" />
+      <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes" />
+      <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes" />
+      <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes" />
+      <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes" />
+      <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes" />
+    </layers>
+    <library>
+      <packages>
+        <package name="PEC11R-4015F-N0024">
+          <wire x1="7.5" y1="7.75" x2="-7.5" y2="7.75" width="0.5" layer="21" />
+          <wire x1="7.5" y1="-7.75" x2="-7.5" y2="-7.75" width="0.5" layer="21" />
+          <wire x1="7.5" y1="7.75" x2="7.5" y2="-7.75" width="0.5" layer="21" />
+          <wire x1="-7.5" y1="7.75" x2="-7.5" y2="-7.75" width="0.5" layer="21" />
+          <pad name="1" x="-2.54" y="-6.625" drill="1.0" diameter="1.75" shape="square" />
+          <pad name="2" x="0.0" y="-6.625" drill="1.0" diameter="1.75" shape="round" />
+          <pad name="3" x="2.54" y="-6.625" drill="1.0" diameter="1.75" shape="round" />
+          <pad name="4" x="5.7" y="0.435" drill="2.6" diameter="3.5" shape="round" />
+          <pad name="5" x="-5.7" y="0.435" drill="2.6" diameter="3.5" shape="round" />
+        </package>
+        <package name="NEW_PACKAGE">
+          <wire x1="5.0" y1="-4.0" x2="-5.0" y2="-4.0" width="1.25" layer="21" />
+          <wire x1="5.0" y1="2.0" x2="-5.0" y2="2.0" width="1.25" layer="21" />
+          <wire x1="-5.0" y1="2.0" x2="-5.0" y2="-2.0" width="1.25" layer="21" />
+          <wire x1="5.0" y1="2.0" x2="5.0" y2="-2.0" width="1.25" layer="21" />
+          <pad name="1" x="-1.27" y="-1.27" drill="0.8" diameter="1.25" shape="square" />
+          <pad name="2" x="1.27" y="-1.27" drill="0.8" diameter="1.25" shape="round" />
+          <pad name="3" x="1.27" y="1.27" drill="0.8" diameter="1.25" shape="round" />
+          <pad name="4" x="-1.27" y="1.27" drill="0.8" diameter="1.25" shape="round" />
+          <pad name="5" x="-3.705" y="-2.75" drill="1.5" diameter="2.25" shape="round" />
+          <pad name="6" x="3.705" y="-2.75" drill="1.5" diameter="2.25" shape="round" />
+        </package>
+        <package name="0903250004">
+          <wire x1="5.0" y1="-4.0" x2="-5.0" y2="-4.0" width="1.25" layer="21" />
+          <wire x1="5.0" y1="2.0" x2="-5.0" y2="2.0" width="1.25" layer="21" />
+          <wire x1="-5.0" y1="2.0" x2="-5.0" y2="-2.0" width="1.25" layer="21" />
+          <wire x1="5.0" y1="2.0" x2="5.0" y2="-2.0" width="1.25" layer="21" />
+          <pad name="1" x="-1.27" y="-1.27" drill="0.8" diameter="1.25" shape="square" />
+          <pad name="2" x="1.27" y="-1.27" drill="0.8" diameter="1.25" shape="round" />
+          <pad name="3" x="1.27" y="1.27" drill="0.8" diameter="1.25" shape="round" />
+          <pad name="4" x="-1.27" y="1.27" drill="0.8" diameter="1.25" shape="round" />
+          <pad name="5" x="-3.705" y="-2.75" drill="1.5" diameter="2.25" shape="round" />
+          <pad name="6" x="3.705" y="-2.75" drill="1.5" diameter="2.25" shape="round" />
+        </package>
+        <package name="100SP4T6B11M2QEH">
+          <wire x1="6.5" y1="3.5" x2="-6.5" y2="3.5" width="0.5" layer="21" />
+          <wire x1="6.5" y1="-3.5" x2="-6.5" y2="-3.5" width="0.5" layer="21" />
+          <wire x1="6.5" y1="3.5" x2="6.5" y2="-3.5" width="0.5" layer="21" />
+          <wire x1="-6.5" y1="3.5" x2="-6.5" y2="-3.5" width="0.5" layer="21" />
+          <pad name="1" x="-4.7" y="-0.0" drill="1.85" diameter="3.0" shape="round" />
+          <pad name="2" x="0.0" y="-0.0" drill="1.85" diameter="3.0" shape="round" />
+          <pad name="3" x="4.7" y="-0.0" drill="1.85" diameter="3.0" shape="round" />
+        </package>
+        <package name="TO-220-5">
+          <wire x1="5.5" y1="10.0" x2="-5.5" y2="10.0" width="0.5" layer="21" />
+          <wire x1="5.5" y1="-10.0" x2="-5.5" y2="-10.0" width="0.5" layer="21" />
+          <wire x1="5.5" y1="10.0" x2="5.5" y2="-10.0" width="0.5" layer="21" />
+          <wire x1="-5.5" y1="10.0" x2="-5.5" y2="-10.0" width="0.5" layer="21" />
+          <smd name="1" x="0.0" y="2.375" dx="6.5" dy="4.75" layer="1" rot="R0" />
+          <pad name="2" x="-3.3" y="-9.0" drill="1.0" diameter="1.5" shape="square" />
+          <pad name="3" x="-1.65" y="-9.0" drill="1.0" diameter="1.5" shape="round" />
+          <pad name="4" x="0.0" y="-9.0" drill="1.0" diameter="1.5" shape="round" />
+          <pad name="5" x="1.6499999" y="-9.0" drill="1.0" diameter="1.5" shape="round" />
+          <pad name="6" x="3.3" y="-9.0" drill="1.0" diameter="1.5" shape="round" />
+          <pad name="7" x="0.0" y="7.2" drill="4.0" diameter="5.0" shape="round" />
+        </package>
+        <package name="RADIAL_CAP_6.3-DIA_2.5-SPACE">
+          <wire x1="3.25" y1="3.25" x2="-3.25" y2="3.25" width="0.5" layer="21" />
+          <wire x1="3.25" y1="-3.25" x2="-3.25" y2="-3.25" width="0.5" layer="21" />
+          <wire x1="3.25" y1="3.25" x2="3.25" y2="-3.25" width="0.5" layer="21" />
+          <wire x1="-3.25" y1="3.25" x2="-3.25" y2="-3.25" width="0.5" layer="21" />
+          <pad name="1" x="-1.25" y="-0.0" drill="1.0" diameter="1.75" shape="square" />
+          <pad name="2" x="1.25" y="-0.0" drill="1.0" diameter="1.75" shape="round" />
+        </package>
+        <package name="RADIAL_CAP_8-DIA_3.5-SPACE">
+          <wire x1="4.0" y1="4.0" x2="-4.0" y2="4.0" width="0.5" layer="21" />
+          <wire x1="4.0" y1="-4.0" x2="-4.0" y2="-4.0" width="0.5" layer="21" />
+          <wire x1="4.0" y1="4.0" x2="4.0" y2="-4.0" width="0.5" layer="21" />
+          <wire x1="-4.0" y1="4.0" x2="-4.0" y2="-4.0" width="0.5" layer="21" />
+          <pad name="1" x="-1.75" y="-0.0" drill="1.0" diameter="1.75" shape="square" />
+          <pad name="2" x="1.75" y="-0.0" drill="1.0" diameter="1.75" shape="round" />
+        </package>
+        <package name="DO-201AD_AXIAL">
+          <wire x1="9.0" y1="3.0" x2="-9.0" y2="3.0" width="0.5" layer="21" />
+          <wire x1="9.0" y1="-3.0" x2="-9.0" y2="-3.0" width="0.5" layer="21" />
+          <wire x1="9.0" y1="3.0" x2="9.0" y2="-3.0" width="0.5" layer="21" />
+          <wire x1="-9.0" y1="3.0" x2="-9.0" y2="-3.0" width="0.5" layer="21" />
+          <pad name="1" x="-7.5" y="-0.0" drill="1.5" diameter="2.25" shape="square" />
+          <pad name="2" x="7.5" y="-0.0" drill="1.5" diameter="2.25" shape="round" />
+        </package>
+        <package name="INDUCT_AXIAL_28-SPACING">
+          <wire x1="16.0" y1="6.0" x2="-16.0" y2="6.0" width="0.5" layer="21" />
+          <wire x1="16.0" y1="-6.0" x2="-16.0" y2="-6.0" width="0.5" layer="21" />
+          <wire x1="16.0" y1="6.0" x2="16.0" y2="-6.0" width="0.5" layer="21" />
+          <wire x1="-16.0" y1="6.0" x2="-16.0" y2="-6.0" width="0.5" layer="21" />
+          <wire x1="12.0" y1="6.0" x2="-12.0" y2="6.0" width="0.5" layer="21" />
+          <wire x1="12.0" y1="-6.0" x2="-12.0" y2="-6.0" width="0.5" layer="21" />
+          <wire x1="12.0" y1="6.0" x2="12.0" y2="-6.0" width="0.5" layer="21" />
+          <wire x1="-12.0" y1="6.0" x2="-12.0" y2="-6.0" width="0.5" layer="21" />
+          <pad name="1" x="-14.0" y="-0.0" drill="1.25" diameter="2.0" shape="square" />
+          <pad name="2" x="14.0" y="-0.0" drill="1.25" diameter="2.0" shape="round" />
+        </package>
+        <package name="RADIAL_CAP_10-DIA_5-SPACE">
+          <wire x1="5.0" y1="5.0" x2="-5.0" y2="5.0" width="0.5" layer="21" />
+          <wire x1="5.0" y1="-5.0" x2="-5.0" y2="-5.0" width="0.5" layer="21" />
+          <wire x1="5.0" y1="5.0" x2="5.0" y2="-5.0" width="0.5" layer="21" />
+          <wire x1="-5.0" y1="5.0" x2="-5.0" y2="-5.0" width="0.5" layer="21" />
+          <pad name="1" x="-2.5" y="-0.0" drill="1.0" diameter="2.0" shape="square" />
+          <pad name="2" x="2.5" y="-0.0" drill="1.0" diameter="2.0" shape="round" />
+        </package>
+      </packages>
+      <symbols />
+      <devicesets />
+    </library>
+  </drawing>
+</eagle>
