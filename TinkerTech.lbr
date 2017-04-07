@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -677,6 +677,26 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <text x="-2.54" y="8.89" size="0.8128" layer="27">&gt;Value</text>
 <text x="-2.54" y="10.16" size="0.8128" layer="25">&gt;Name</text>
 </package>
+<package name="TO220F-5">
+<wire x1="5.25" y1="4.3" x2="-5.25" y2="4.3" width="0.3048" layer="21"/>
+<wire x1="5.25" y1="-5" x2="-5.25" y2="-5" width="0.3048" layer="21"/>
+<pad name="4" x="1.7" y="0" drill="0.9" diameter="1.5"/>
+<pad name="2" x="-1.7" y="0" drill="0.9" diameter="1.5"/>
+<pad name="1" x="-3.4" y="-3.9" drill="0.9" diameter="1.5" shape="square"/>
+<pad name="3" x="0" y="-3.9" drill="0.9" diameter="1.5"/>
+<pad name="5" x="3.4" y="-3.9" drill="0.9" diameter="1.5"/>
+<wire x1="-5.25" y1="4.3" x2="-5.25" y2="-5" width="0.3048" layer="21"/>
+<wire x1="5.25" y1="-5" x2="5.25" y2="4.3" width="0.3048" layer="21"/>
+<text x="-6.35" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="7.62" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="RADIAL_8.5-DIA_5-SPACE">
+<pad name="P$1" x="-2.5" y="0" drill="0.8"/>
+<pad name="P$2" x="2.5" y="0" drill="0.8"/>
+<circle x="0" y="0" radius="8.5" width="0.127" layer="21"/>
+<text x="6" y="7" size="1.27" layer="25">&gt;NAME</text>
+<text x="6" y="-8" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SPDT">
@@ -960,6 +980,19 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.445" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="5V_REG_SI-8050TFE">
+<pin name="IN" x="10.16" y="-10.16" length="middle" rot="R180"/>
+<pin name="SW" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="ADJ" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="SS" x="10.16" y="10.16" length="middle" rot="R180"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<text x="-5.08" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SPDT_MOM-OFF-MOM">
@@ -1132,6 +1165,15 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RADIAL_8.5-DIA_5-SPACE" package="RADIAL_8.5-DIA_5-SPACE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1529,6 +1571,25 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connect gate="G$1" pin="P$2" pad="2"/>
 <connect gate="G$1" pin="P$3" pad="3"/>
 <connect gate="G$1" pin="P$4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REG_5V_SWITCHING">
+<gates>
+<gate name="G$1" symbol="5V_REG_SI-8050TFE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220F-5">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="SS" pad="5"/>
+<connect gate="G$1" pin="SW" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
